@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS2 Skin Drop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="hero">
+        <p class="eyebrow">Skin Trading</p>
+        <h1>Start Trading With Low Budget!</h1>
+      </header>
+
+      <section class="panel">
+        <label for="nickname">In-game nickname</label>
+        <div class="input-row">
+          <input
+            id="nickname"
+            type="text"
+            placeholder="e.g., mr_shadow"
+            maxlength="24"
+          />
+          <span class="input-accent"></span>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Step 1 · choose up cards</h2>
+          
+        </div>
+        <div class="cards-grid" id="cardsGrid">
+          <button class="card" type="button" data-card="1">
+            <img
+              src="https://i.ibb.co/N6f7K89d/Frame-602.png"
+              alt="Card 1"
+              loading="lazy"
+            />
+          </button>
+          <button class="card" type="button" data-card="2">
+            <img
+              src="https://i.ibb.co/1YtJyCXY/Frame-603.png"
+              alt="Card 2"
+              loading="lazy"
+            />
+          </button>
+          <button class="card" type="button" data-card="3">
+            <img
+              src="https://i.ibb.co/JWP9crGD/Frame-604.png"
+              alt="Card 3"
+              loading="lazy"
+            />
+          </button>
+          <button class="card" type="button" data-card="4">
+            <img
+              src="https://i.ibb.co/dwJd1CGn/Frame-605.png"
+              alt="Card 4"
+              loading="lazy"
+            />
+          </button>
+        </div>
+      </section>
+
+      <div class="actions">
+        <button id="nextBtn" type="button">Next</button>
+        <p class="feedback" id="feedback"></p>
+      </div>
+
+    </div>
+
+      <div class="knives-overlay hidden" id="knivesOverlay" role="dialog" aria-modal="true">
+        <div class="knives-modal panel">
+          <button class="overlay-close" type="button" id="closeOverlay" aria-label="Close overlay">&times;</button>
+          <div class="panel-head">
+            <h2>Epic Drop</h2>
+          </div>
+          <div class="knives-grid">
+            <div class="knife-card">
+              <div class="knife-glow"></div>
+              <img
+                src="https://i.ibb.co/BHJvdTF8/78032befcea8142e06b0b3c48f0878ad-large-preview.webp"
+              alt="Knife 1"
+              loading="lazy"
+            />
+          </div>
+          <div class="knife-card">
+            <div class="knife-glow"></div>
+            <img
+              src="https://i.ibb.co/QjbQvD1Y/2d58c54df215bf6d0f5888ff4f09a653-large-preview.webp"
+              alt="Knife 2"
+              loading="lazy"
+            />
+          </div>
+          <div class="knife-card">
+            <div class="knife-glow"></div>
+            <img
+              src="https://i.ibb.co/TMz4Tr72/eae71c2e823cc9171c7e9371bb78a899-large-preview.webp"
+              alt="Knife 3"
+              loading="lazy"
+            />
+          </div>
+          <div class="knife-card">
+            <div class="knife-glow"></div>
+              <img
+                src="https://i.ibb.co/XfGyMvrV/f4c5cd326a1acf39e2533dea2e4b76e0-large-preview.webp"
+              alt="Knife 4"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="overlay-actions">
+            <button class="ghost-btn" type="button" id="insightBtn">Get insight</button>
+          </div>
+          <div class="insight is-collapsed" id="insightBlock">
+            <img
+              src="https://i.ibb.co/zTN2Yn26/Animated-Ag-ADERo-AAtixc-Es.gif"
+              alt="Insight animation"
+            />
+          </div>
+        </div>
+      </div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
